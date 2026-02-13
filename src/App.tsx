@@ -5,8 +5,14 @@ const App = () => {
   const theme = window.Telegram?.WebApp?.themeParams;
 
   return (
-    <div>
-      <h1 className="text-5xl">Hello {user?.first_name}</h1>
+    <div
+      className="min-h-screen flex items-center justify-center"
+      style={{
+        backgroundColor: theme?.bg_color,
+        color: theme?.text_color,
+      }}
+    >
+      <h1 className="text-5xl font-bold">Hello {user?.first_name}</h1>
     </div>
   );
 };
