@@ -9,10 +9,9 @@ const App = () => {
       className="min-h-screen flex items-center justify-center px-4"
       style={{
         backgroundColor: theme?.bg_color,
-        color: theme?.text_color,
       }}
     >
-      <div className="w-full max-w-sm rounded-2xl bg-white/90 backdrop-blur-md shadow-2xl p-6">
+      <div className="w-full max-w-sm rounded-2xl bg-white/90 backdrop-blur-md shadow-2xl p-6 text-black">
         <h1 className="text-xl font-semibold text-center mb-6">
           Telegram Profile
         </h1>
@@ -34,7 +33,7 @@ const App = () => {
             />
           </div>
         ) : (
-          <p className="text-center text-gray-500">
+          <p className="text-center text-gray-600">
             Open this app inside Telegram
           </p>
         )}
@@ -50,9 +49,9 @@ const InfoRow = ({
   label: string;
   value?: string | number;
 }) => (
-  <div className="flex items-center justify-between border-b pb-2">
-    <span className="text-gray-500">{label}</span>
-    <span className="font-medium">{value}</span>
+  <div className="flex items-center justify-between border-b border-gray-200 pb-2">
+    <span className="text-gray-600">{label}</span>
+    <span className="font-medium text-black">{value}</span>
   </div>
 );
 
